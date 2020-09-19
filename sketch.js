@@ -5,10 +5,10 @@ const Constraint = Matter.Constraint
 
 var ground1
 function setup() {
-  createCanvas(800,400);
+  createCanvas(800,600);
   engine = Engine.create();
   world = engine.world;
-  ground1 = new ground(400,380,800,20);
+  ground1 = new ground(400,580,800,20);
   polygon1 = new Polygon(220,60,20);
   block1 = new box(120,400,30,40);
   block2 = new box(150,400,30,40);
@@ -64,6 +64,6 @@ function mouseReleased(){
 
 function keyPressed(){
   if(keyCode === 32){
-      slingshot.attach(Polygon.body)
+      slingshot.attach(polygon1.body)
   }
 }

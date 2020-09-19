@@ -5,7 +5,8 @@ class box extends baseClass{
         this.visibility = 255;
     }
     display(){
-        if(this.body.speed<1){
+        console.log(this.body.speed)
+        if(this.body.speed<10){
             super.display()
         }
         else{
